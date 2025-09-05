@@ -10,5 +10,6 @@
 <?php
  echo "Witamy w języku PHP";
  ?>
+ <div>allaf</div>
 </body>
 </html>
