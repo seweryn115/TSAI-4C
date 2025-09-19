@@ -8,6 +8,10 @@
 p {
     color: blueviolet;
     font-family: fantasy;
+    text-shadow: 3px 3px 3px lightpink;
+}
+b {
+    border:solid ;
 }
 
     </style>
@@ -28,19 +32,19 @@ define("Druga_stała","Miramax")
 <br>
 <hr>
 <br>
-<p>var_dump dla ciągu znaków: <?php var_dump($tekst) ?></p>
-<p>var_dump dla liczby całkowitej: <?php var_dump($liczba) ?></p>
-<p>var_dump dla liczby rzeczywistej: <?php var_dump($ulamek) ?></p>
-<p>var_dump dla wartiości bool'owskiej: <?php var_dump($bul) ?></p>
+<p>var_dump dla ciągu znaków: <b><?php var_dump($tekst) ?></b></p>
+<p>var_dump dla liczby całkowitej: <b><?php var_dump($liczba) ?></b></p>
+<p>var_dump dla liczby rzeczywistej: <b><?php var_dump($ulamek) ?></b></p>
+<p>var_dump dla wartiości bool'owskiej: <b><?php var_dump($bul) ?></b></p>
 <br>
 <hr>
 <br>
-<p>print dla pierwszsej stałej: <?=Pierwsza_stała ?></p>
-<p>print dla drugiej stałej: <?=Druga_stała ?></p>
+<p>print dla pierwszsej stałej: <b><?=Pierwsza_stała ?></b></p>
+<p>print dla drugiej stałej: <b><?=Druga_stała ?></b></p>
 <br>
 <hr>
 <br>
-<p>var_export dla pierwszsej stałej : <?php var_export(Pierwsza_stała) ?> </p>
-<p>var_export dla drugiej stałej : <?php var_export(Druga_stała) ?> </p>
+<p>var_export dla pierwszsej stałej : <b><?php var_export(Pierwsza_stała) ?></b> </p>
+<p>var_export dla drugiej stałej : <b><?php var_export(Druga_stała) ?> </b></p>
 </body>
 </html>
