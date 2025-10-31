@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        div{
+            margin-bottom: 10px;
+        }
+        strong{
+            background-color: orange;
+            border-radius: 80px 0px 100px 10px; 
+            border: solid;
+            border-color: orangered;
+        }
+    </style>
 </head>
 <body>
 <?php 
