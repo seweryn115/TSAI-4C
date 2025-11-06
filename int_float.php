@@ -33,13 +33,13 @@ $dodaj = "59.85" + 100
 </fieldset>
 <fieldset>
 <legend> AD 4. </legend>
-<p>stała <b><?= 'PHP_INT_MAX'?></b></p>
-<p>stała <b><?= 'PHP_INT_MIN'?></b></p>
-<p>stała <b><?= 'PHP_INT_SIZE'?></b></p>
-<p>stała <b><?= 'PHP_FLOAT_MAX'?></b></p>
-<p>stała <b><?= 'PHP_FLOAT_MIN'?></b></p>
-<p>stała <b><?= 'PHP_FLOAT_DIG'?></b></p>
-<p>stała <b><?= 'PHP_FLOAT_EPSILON'?></b></p>
+<p>stała <b><?= 'PHP_INT_MAX'?></b>ma wartość</p>
+<p>stała <b><?= 'PHP_INT_MIN'?></b>ma wartość</p>
+<p>stała <b><?= 'PHP_INT_SIZE'?></b>ma wartość</p>
+<p>stała <b><?= 'PHP_FLOAT_MAX'?></b>ma wartość</p>
+<p>stała <b><?= 'PHP_FLOAT_MIN'?></b>ma wartość</p>
+<p>stała <b><?= 'PHP_FLOAT_DIG'?></b>ma wartość</p>
+<p>stała <b><?= 'PHP_FLOAT_EPSILON'?></b>ma wartość</p>
 </fieldset>
 </body>
 </html>
