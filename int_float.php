@@ -33,13 +33,13 @@ $dodaj = "59.85" + 100
 </fieldset>
 <fieldset>
 <legend> AD 4. </legend>
-<p>stała <b><?= 'PHP_INT_MAX'?></b>ma wartość</p>
-<p>stała <b><?= 'PHP_INT_MIN'?></b>ma wartość</p>
-<p>stała <b><?= 'PHP_INT_SIZE'?></b>ma wartość</p>
-<p>stała <b><?= 'PHP_FLOAT_MAX'?></b>ma wartość</p>
-<p>stała <b><?= 'PHP_FLOAT_MIN'?></b>ma wartość</p>
-<p>stała <b><?= 'PHP_FLOAT_DIG'?></b>ma wartość</p>
-<p>stała <b><?= 'PHP_FLOAT_EPSILON'?></b>ma wartość</p>
+<p>stała <b><?= 'PHP_INT_MAX'?></b>ma wartość <?var_export(PHP_INT_MAX)?></p>
+<p>stała <b><?= 'PHP_INT_MIN'?></b>ma wartość <?var_export(PHP_INT_MIN)?></p>
+<p>stała <b><?= 'PHP_INT_SIZE'?></b>ma wartość <?var_export(PHP_INT_SIZE)?></p>
+<p>stała <b><?= 'PHP_FLOAT_MAX'?></b>ma wartość <?var_export(PHP_FLOAT_MAX)?></p>
+<p>stała <b><?= 'PHP_FLOAT_MIN'?></b>ma wartość <?var_export(PHP_FLOAT_MIN)?></p>
+<p>stała <b><?= 'PHP_FLOAT_DIG'?></b>ma wartość <?var_export(PHP_FLOAT_DIG)?></p>
+<p>stała <b><?= 'PHP_FLOAT_EPSILON'?></b>ma wartość <?var_export(PHP_FLOAT_EPSILON)?></p>
 </fieldset>
 </body>
 </html>
