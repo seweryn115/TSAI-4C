@@ -20,6 +20,6 @@ p#drugi{
 </head>
 <body>
     <p id="pierwszy">Dzisiejsza data: <strong><?= date(1) ?></strong></p>
-    <p id="drugi">Data za 1000 dni: <?=date(strtotime('21.11.2025'))?></p>
+    <p id="drugi">Data za 1000 dni: <?=date( ("d.m.Y" ), strtotime('+ 1000 days'))?></p>
 </body>
 </html>
