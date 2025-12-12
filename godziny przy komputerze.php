@@ -40,7 +40,7 @@
 </head>
 <?php
 $pn1 = date_create("12:00");
-$pn2 = date_create("15:30");
+$pn2 = date_create("23:59");
 $wt1 = date_create("08:05");
 $wt2 = date_create("10:15");
 $śr1 = date_create("06:45");
@@ -79,6 +79,11 @@ $gm4 = $g4 * 60 + $m4;
 $gm5 = $g5 * 60 + $m5;
 $gm6 = $g6 * 60 + $m6;
 $gm7 = $g7 * 60 + $m7;
+
+$gmgm = $gm1 + $gm2 + $gm3 + $gm4 + $gm5 + $gm6 + $gm7;
+$gmgs = $gmgm * 60;
+
+$srednia = $gmgs / 7
 ?>
 
 <body>
@@ -105,17 +110,25 @@ $gm7 = $g7 * 60 + $m7;
         </tr>
         <tr>
             <td>różnica [h:m]</td>
-            <td><time> <?= $g1 . ":" . $m1 ?> (<strong><?= $gm1 ?></strong>minut)</time></td>
-            <td><time> <?= $g2 . ":" . $m2 ?> (<strong><?= $gm2 ?></strong>minut)</time></td>
-            <td><time> <?= $g3 . ":" . $m3 ?> (<strong><?= $gm3 ?></strong>minut)</time></td>
-            <td><time> <?= $g4 . ":" . $m4 ?> (<strong><?= $gm4 ?></strong>minut)</time></td>
-            <td><time> <?= $g5 . ":" . $m5 ?> (<strong><?= $gm5 ?></strong>minut)</time></td>
-            <td><time> <?= $g6 . ":" . $m6 ?> (<strong><?= $gm6 ?></strong>minut)</time></td>
-            <td><time> <?= $g7 . ":" . $m7 ?> (<strong><?= $gm7 ?></strong>minut)</time></td>
+            <td><time> <?= $g1 . ":" . $m1 ?> </time>(<strong><?= $gm1 ?></strong>minut)</td>
+            <td><time> <?= $g2 . ":" . $m2 ?> </time>(<strong><?= $gm2 ?></strong>minut)</td>
+            <td><time> <?= $g3 . ":" . $m3 ?> </time>(<strong><?= $gm3 ?></strong>minut)</td>
+            <td><time> <?= $g4 . ":" . $m4 ?> </time>(<strong><?= $gm4 ?></strong>minut)</td>
+            <td><time> <?= $g5 . ":" . $m5 ?> </time>(<strong><?= $gm5 ?></strong>minut)</td>
+            <td><time> <?= $g6 . ":" . $m6 ?> </time>(<strong><?= $gm6 ?></strong>minut)</td>
+            <td><time> <?= $g7 . ":" . $m7 ?> </time>(<strong><?= $gm7 ?></strong>minut)</td>
         </tr>
         <tr>
             <td id="dwa"></td>
-            <td colspan="7">suma:<time><?= intdiv($gmgm,60)</time></td>
+            <th colspan="7">suma:<time><?= intdiv($gmgm,60) . ":" . $gmgm%60 ?></time> (<strong><?= $gmgm?></strong> minut)</th>
+        </tr>
+        <tr>
+            <td id="dwa"></td>
+            <th colspan="7">Srednio dziennie:<time><?= intdiv($srednia,60) . ":" . $gmgm%60?></time>(<strong><?= round($gmgm, 2)?></strong>minut)</th>
+        </tr>
+        <tr>
+            <td id="dwa"></td>
+            <th colspan="7">Suma [dni : godziny : minuty : sekundy] <time><?= gmdate("d",$gmgs / 86400) . ":" . gmdate("h:i:s", $gmgs)?></time></th>
         </tr>
     </table>
 </body>
