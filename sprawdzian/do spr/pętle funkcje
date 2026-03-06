@@ -1,0 +1,47 @@
+array_fill() - Wypełnia tablicę określoną wartością (np. tworzy 10 elementów o wartości "0")
+
+2 array_key_exists() - Sprawdza, czy dany klucz istnieje w tablicy.
+
+3 array_keys() - Zwraca wszystkie klucze z tablicy.
+
+4 array_pop() Usuwa ostatni element z tablicy i go zwraca.
+
+5 array_push() - Dodaje element (lub kilka) na koniec tablicy.
+
+6 array_reverse() Odwraca kolejność elementów.
+
+7 array_search() Szuka wartości w tablicy i zwraca jej klucz.
+
+8 array_slice() - Zwraca fragment tablicy (nie zmienia oryginału).
+
+9 array_unique() Usuwa duplikaty.
+
+10 array_values() Zwraca same wartości (resetuje klucze na 0,1,2...).
+
+11
+
+12 count() Zlicza elementy w tablicy.
+
+13 explode() Dzieli tekst na tablicę według separatora.
+
+14 in_array() - Sprawdza, czy dana wartość jest w tablicy.
+
+15 is_array() - Sprawdza, czy zmienna jest tablicą.
+
+16 range() - Tworzy tablicę z zakresu liczb (lub liter).
+
+17 list() Przypisuje elementy tablicy do zmiennych.
+
+18 shuffle() Miesza elementy w losowej kolejności.
+
+19 20 sort() - Sortuje rosnąco (po wartościach, resetuje klucze).
+
+21 rsort() - Sortuje malejąco (resetuje klucze).
+
+22 asort() - Sortuje rosnąco, ale zachowuje klucze.
+
+23 ksort() Sortuje rosnąco po kluczach.
+
+24 arsort() - Sortuje malejąco, zachowuje klucze.
+
+25 krsort() - Sortuje malejąco po kluczach
